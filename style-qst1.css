@@ -1,0 +1,495 @@
+.A{
+    background-color: gray;
+}
+
+.B{
+    background-color: gray;
+}
+
+.C{
+    background-color: lightgray;
+}
+
+.D{
+    background-color: gray;
+}
+
+.E{
+    background-color: gray;
+}
+
+.F{
+    background-color: lightblue;
+    color: white;
+}
+
+.G{
+    background-color: gray;
+}
+
+.H{
+    background-color: lightblue;
+    color: white;
+}
+
+.I{
+    background-color: gray;
+}
+
+#centralizar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+#container{
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    margin-bottom: 50px;
+}
+
+.qst1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+}
+
+.qst1 .H{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 1;
+}
+
+.qst1 .C{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-end: 1;
+}
+.qst1 .F{
+    display: grid;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-end: 2;
+}
+
+.qst2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+}
+
+.qst2 .H{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+    grid-row-start: 1;
+}
+
+.qst2 .A{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.qst2 .C{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    z-index: 1;
+}
+
+.qst2 .G{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.qst2 .F{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.qst3{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+}
+
+.qst3 .A{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.qst3 .H{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+    grid-row-start: 1;
+}
+
+.qst3 .C{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    z-index: 1;
+}
+
+.qst3 .G{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.qst3 .B{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.qst4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 2fr) 1fr;
+}
+
+.qst4 .A{
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.qst4 .B {
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.qst4 .C, .qst4 .D, .qst4 .E, .qst4 .G{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.qst4 .C{
+    z-index: 1;
+}
+
+.qst4 .H{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-end: 2;
+}
+
+.qst4 .F{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-end: 5;
+}
+
+.qst5 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.qst5 .F, .qst5 .E, .qst5 .G{
+    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;   
+}   
+
+.qst5 .F{
+    z-index: 1;   
+}
+
+.qst5 .H{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-end: 2;
+}
+
+.qst5 .C{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;   
+}
+
+.qst5 .D{
+    grid-column-start: 2;
+    grid-column-end: 4;    
+}
+
+.qst6{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 1fr 1fr;
+}
+
+.qst6 .C {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+}
+
+.qst6 .G {
+    grid-column-start: 3;
+    grid-row-end: 4;
+}
+
+.qst6 .H {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+}
+
+.qst7 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr 1fr 2fr 2fr;
+}
+
+.qst7  .A, .qst7  .B {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.qst7  .C, .qst7  .D, .qst7  .E {
+    z-index: 1;
+}
+
+.qst7  .C, .qst7  .G {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.qst7  .D, .qst7  .E {
+    grid-row-start: 3;
+}
+
+.qst7  .D {
+    grid-column-start: 2;
+}
+
+.qst7  .E {
+    grid-column-start: 4;
+}
+
+.qst7 .F, .qst7 .H {
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+
+.qst7 .H {
+    grid-row-start: 1;   
+}
+
+.qst8 {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+}
+
+.qst8 .A {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    z-index: 2;
+}
+
+.qst8 .B, .qst8 .D, .qst8 .E, .qst8 .G {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.qst8 .B {
+    z-index: 3;
+}
+
+.qst8 .C, .qst8 .H {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.qst8 .C {
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.qst8 .C {
+    z-index: 1;
+}
+
+.qst8 .F {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-end: 6;
+}
+
+.qst9 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 7fr 1fr 1fr;
+    grid-template-rows: 6fr repeat(6, 4fr) 8fr;
+}
+
+.qst9 .C, .qst9 .H, .qst9 .F {
+    grid-column-start: 3;
+}
+
+.qst9 .A, .qst9 .I {
+    grid-column-start: 2;
+}
+
+.qst9 .B, .qst9 .E {
+    grid-column-start: 4;
+}
+
+.qst9 .A {
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.qst9 .B {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.qst9 .C {
+    grid-row-start: 2;
+    grid-row-end: 8;
+}
+
+.qst9 .D {
+    grid-column-start: 1;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.qst9 .E {
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.qst9 .F {
+    grid-row-end: 9;
+}
+
+.qst9 .G {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-end: 6;
+}
+
+.qst9 .H {
+    grid-row-start: 1;
+}
+
+.qst9 .I {
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+
+.qst10 {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.qst10 .C, .qst10 .H {
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.qst10 .C {
+    grid-column-start: 2;
+}
+
+.qst10 .F, .qst10 .G, .qst10 .H, .qst10 .I {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.qst10 .H {
+    z-index: 1;
+}
+
+.qst11 {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.qst11 .C, .qst11 .H {
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.qst11 .C {
+    grid-column-start: 2;
+}
+
+.qst11 .F, .qst11 .G, .qst11 .H, .qst11 .I {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.qst11 .H {
+    z-index: 1;
+}
+
+.qst12 {
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.qst12 .H, .qst12 .D, .qst12 .E, .qst12 .H, .qst12 .F, .qst12 .G, .qst12 .I {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.qst12 .H {
+    z-index: 1;
+}
+
+.qst12 .A{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.qst12 .B{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.qst12 .C {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
